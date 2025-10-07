@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Fibonacci</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script type="text/javascript">
+        let sequencia = "1";
+        let totalNumeros = Number(prompt("Informe o total de números:"));
+        if (totalNumeros < 0) {
+            alert("Entrada inválida!")
+        } else {
+            let contador = 1;
+            let numeroAnterior = 0;
+            let numeroAtual = 1;
+            while (contador < totalNumeros) {
+                soma = numeroAtual + numeroAnterior;
+                sequencia = sequencia + " " + soma;
+                numeroAnterior = numeroAtual;
+                numeroAtual = soma;
+                contador++;
+            }
+            alert("A sequência é " + sequencia);
+        }
+
+    </script>
+</body>
+
+</html>

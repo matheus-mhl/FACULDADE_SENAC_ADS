@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ex3_triangulo.java&apos; to &apos;ex4_triangulo.java&apos;&#x0D;&#x0A;- Original project: &apos;Aula02_IfElse&apos;&#x0D;&#x0A;- Original element: &apos;ex3_triangulo.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ex4_triangulo.java&apos;" description="Rename compilation unit &apos;ex3_triangulo.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{ex3_triangulo.java" name="ex4_triangulo.java" references="false" stamp="1755867151356" version="1.0"/>
+</session>

@@ -1,0 +1,67 @@
+body {
+    background-color:lightblue;
+}
+
+#main {
+   color : #FF6F61;
+   width: 1280px;
+}
+
+header{
+    background-color: #FFB84D;
+    height: 100px;
+}
+
+h1 {
+    color: black;
+    font-size:20px;
+}
+
+nav{
+    background-color: #A8E6CF;
+    width: 1280px;
+    height: 40px;
+}
+
+#pai_do_section_e_aside {
+    display:flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #A8E6CF;
+    width: 800px;
+    height: 600px;
+}
+
+article {
+    background-color: lightpink;
+    width: 750px;
+    height: 170px;
+
+}
+
+.white-color {
+    color: white;
+}
+
+/* Mudando o h1 do nav de forma isolada*/
+.small{
+    font-size: 16px; /*tamanho da letra*/
+}
+
+aside {
+    background-color: lightgreen;
+    width: 400px;
+    height: 600px;
+    /* margin-left:80px; --> alterando margem com: margin-left:80px; */
+}
+
+footer {
+    background-color: darkgray;
+    height: 70px;
+}
+
+footer h1{
+    color: purple; /*exemplo de herança no CSS, modificando o h1 que está dentro do footer, utilizando a estrutura "footer>h1"*/
+}

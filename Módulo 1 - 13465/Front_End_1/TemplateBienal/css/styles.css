@@ -1,0 +1,73 @@
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+#principal {
+    width: 2000px;
+    height: 600px;
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    align-items: self-end;
+}
+
+.logo{
+    padding-left: 500px;
+}
+
+nav {
+    /* border: 2px solid red; definindo tamanho grossura e cor da borda */
+    width: 700px; /*Largura da borda*/
+    padding: 8px 16px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none; /*remover as bolinhas (que separam os tópicos da lista) */
+    justify-content: space-between; /*organizar contúdo da "ul(unordered list)". "space-around: deixa o contéudo espaçado"*/
+}
+
+ul li a { /*caminho necessário para alterar os elementos dentro da "ul"(ul>li>a)*/
+    color:white;
+    text-decoration: none; /*removendo decoração (nesse caso o sublinhado) do link "ul li a"*/
+    font-size: 16px;
+    font-weight: bold;
+    background-color: black;
+    padding: 8px 16px; /*estabelecendo distancia verticalmente e horizontalmente entre os elementos*/
+    border-radius: 18px; /*arredondando as bordas*/
+    
+    
+}
+
+ul li a:hover{ /*Função usada para mudar características da página quando o cursor do mouse passa por cima (nesse caso estamos modificando os tópicos de navegação do "nav")*/
+    background-color: red; /*muda a cor do plano de fundo quando o cursor passar por cima*/
+    color: white; /*muda a cor da plavra para branco*/
+    text-decoration: underline; /*sublinha o texto*/
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    padding: 20px; /*espaçamento para desgrudar dos cantos*/
+}
+
+.lado_a_lado {
+    display: flex;
+    align-items: flex-start; /* Alinha no topo */
+    gap: 20px; /* Espaçamento entre imagem e texto */
+    flex-wrap: wrap; /* Permite que os elementos quebrem em telas menores */
+    padding: 20px;
+}
+
+.lado_a_lado img {
+    width: 200px;
+    height: auto;
+}
+
+.lado_a_lado p {
+    flex: 1; /* Ocupa o restante do espaço */
+}

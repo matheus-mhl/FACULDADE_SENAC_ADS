@@ -1,0 +1,10 @@
+1 - Ler primeiro Resumo baseado no PDF do professor (Com as coisas mais básicas como tipos de funcionalidade) --> FEITO
+
+2 - Estudar/passar a limpo apenas Resumo dos PDF's: 1o AGILE METHOD e 2o SCRUM, feitos pelo ChatGPT --> pseudoFeito
+
+3 - Em seguida ler resumo da matéria inteira feitopelo GPT (pesquisar e de preferencia escrever conceitos estudados para fixar melhor) --> FEITO
+3.2 - Fazer exercícios contidos no resumo(se possível) --> n deu
+
+4 - Em seguida fazer exercício de Revisão no moodle --> FEITO
+
+5 - Rezar

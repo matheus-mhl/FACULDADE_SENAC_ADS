@@ -1,0 +1,37 @@
+Baseado no seguinte relato, identifique os requisitos funcionais e não funcionais do sistemas. Identifique os atores e os casos de uso do sistema.
+
+"Relato do Caso: Sistema de Gestão de Projetos de Software
+A TechSolutions é uma consultoria especializada em soluções de desenvolvimento de software para diversas empresas. Com a crescente demanda por seus serviços, a empresa tem enfrentado dificuldades na organização e gerenciamento de seus projetos. A comunicação entre a equipe interna e os clientes, a alocação de recursos e o monitoramento de prazos têm sido pontos críticos.
+
+Atualmente, a empresa utiliza um sistema básico, mas ele tem se mostrado inadequado para lidar com o número crescente de projetos e a complexidade das demandas. A gestão manual de tarefas e a falta de visibilidade para o cliente têm causado atrasos e frustrações.
+
+A TechSolutions oferece aos seus clientes soluções personalizadas, com uma equipe interna de consultores e desenvolvedores que trabalha em estreita colaboração com os gerentes de projeto. O processo de desenvolvimento de software é dividido em diversas etapas, que incluem planejamento, desenvolvimento, testes e entrega. Cada etapa possui um conjunto de tarefas que precisam ser realizadas em conjunto por diferentes membros da equipe.
+
+O gerente de projeto é responsável por coordenar todas as atividades e garantir que as entregas sejam feitas no prazo. Ele deve acompanhar o progresso das tarefas, alocar recursos, gerenciar prazos e coordenar a comunicação com o cliente.
+
+Os consultores e desenvolvedores são responsáveis por executar as tarefas atribuídas durante as fases do projeto. Eles devem trabalhar de acordo com as prioridades definidas pelo gerente de projeto, mantendo-se dentro dos prazos estabelecidos e reportando o andamento de suas atividades.
+
+Os clientes, por sua vez, estão interessados em acompanhar o progresso de seus projetos. Eles devem ser capazes de verificar o status geral, os prazos e as etapas que foram concluídas, mas não precisam interagir diretamente com as tarefas ou a alocação de recursos.
+
+A empresa deseja desenvolver um novo sistema para gerenciar e acompanhar o progresso dos projetos, com o objetivo de melhorar a comunicação, otimizar a alocação de recursos e oferecer aos clientes uma visão clara de seus projetos em andamento."
+
+
+O sistema deverá permitir o registro e acompanhamento de projetos, bem como o gerenciamento de suas fases e tarefas.
+
+R:REQUISITO FUNCIONAL. Atores: GERENTE DE PROJETO, CONSULTORES e DESENVOLVEDORES e CLIENTES. Caso de Uso: REGISTRAR, ACOMPANHAR e GERENCIAR TAREFAS
+
+O sistema deve possibilitar a alocação de recursos, como consultores e desenvolvedores, para as tarefas dentro de cada fase.
+
+R:REQUISITO NAO FUNCIONAL. Atores: GERENTE DE PROJETO, CONSULTORES e DESENVOLVEDORES. Caso de Uso: ALOCAR RECURSOS PARA TAREFAS.
+
+A equipe interna deverá ser capaz de atualizar o status das tarefas e registrar o tempo dedicado a cada uma delas.
+
+R: REQUISITO FUNCIONAL. Atores: CONSULTORES E DESENVOLVEDORES. Caso de Uso: ATUALIZAR STATUS DE TAREFAS.
+
+O sistema precisa gerar relatórios que permitam aos gerentes de projeto acompanhar o progresso das atividades.
+
+R:REQUISITO FUNCIONAL. Atores: GERENTE DE PROJETO, CONSULTORES e DESENVOLVEDORES. Caso de Uso: ACOMPANHAR ATIVIDADES
+
+Os clientes devem poder acessar o sistema para verificar o andamento do projeto, mas sem a capacidade de alterar qualquer dado.
+
+R:REQUISITO FUNCIONAL. Atores: CLIENTES. Caso de Uso: ACESSAR O SISTEMA

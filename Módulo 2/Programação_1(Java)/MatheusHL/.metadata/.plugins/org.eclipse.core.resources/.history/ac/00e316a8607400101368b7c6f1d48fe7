@@ -1,0 +1,37 @@
+package variaveis;
+
+public class TesteAtribuicoesVariaveis1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean g;
+		char c;
+		byte b;
+		short s;
+		int i;
+		long l;
+		float f;
+		double d;
+		
+		g = true;
+		c = '1';
+		b = 2;
+		s = 3;
+		i = 4;
+		l = 5;
+		f = 1.1f;
+		d = 1.1;
+		
+		System.out.println("Variavel g = " + g);
+		System.out.println("Variavel c = " + c);
+		System.out.println("Variavel b = " + b);
+		System.out.println("Variavel s = " + s);
+		System.out.println("Variavel i = " + i);
+		System.out.println("Variavel l = " + l);
+		System.out.println("Variavel f = " + f);
+		System.out.println("Variavel d = " + d);
+		
+
+	}
+
+}

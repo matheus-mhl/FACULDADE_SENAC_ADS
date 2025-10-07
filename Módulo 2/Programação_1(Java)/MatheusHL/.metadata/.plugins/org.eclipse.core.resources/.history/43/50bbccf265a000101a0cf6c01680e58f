@@ -1,0 +1,24 @@
+package exRevisaoC1;
+
+public class Autor {
+	private String nome;
+	private String nacionalidade;
+
+    // Construtor que inicializa todos os atributos
+    public Autor(String nome, String nacionalidade) {
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+    }
+
+    // (Opcional) Getters para acessar os atributos
+    public String getNome() {
+        return nome;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+    
+
+
+}

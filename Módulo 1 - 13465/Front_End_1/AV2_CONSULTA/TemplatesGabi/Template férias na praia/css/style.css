@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* 
+    .position-relative: 
+    Essa classe aplica a propriedade CSS `position: relative` ao elemento.
+    O `position: relative` é usado para posicionar elementos em relação ao seu 
+    local original. Ele cria um contexto para que outros elementos posicionados
+    de forma absoluta (com `position: absolute`) possam ser colocados em relação 
+    a esse contêiner.
+*/
+.position-relative {
+    position: relative;
+}
+
+/* 
+    .btn-overlay:
+    A classe `btn-overlay` é usada para posicionar o botão sobre a imagem, de forma
+    centralizada.
+    
+    - `top: 50%`: Move o botão 50% da altura do contêiner em relação ao topo.
+    - `left: 50%`: Move o botão 50% da largura do contêiner em relação à esquerda.
+    - `transform: translate(-50%, -50%)`: Ajusta a posição do botão para centralizá-lo
+      perfeitamente, movendo-o 50% da sua largura e altura para cima e para a esquerda.
+    - `position: absolute`: Faz o botão ser posicionado de forma absoluta dentro do 
+      contêiner (que tem `position: relative`), permitindo seu controle preciso.
+    - `z-index: 2`: O `z-index` determina a sobreposição dos elementos. O valor `2` 
+      garante que o botão fique acima da imagem, que por padrão tem um `z-index` de `1`.
+*/
+.btn-overlay {
+    top: 50%; /* Posiciona o botão 50% do topo */
+    left: 50%; /* Posiciona o botão 50% da esquerda */
+    transform: translate(-50%, -50%); /* Centraliza o botão perfeitamente */
+    position: absolute; /* Posiciona o botão de forma absoluta em relação ao contêiner pai */
+    z-index: 2; /* Garante que o botão fique acima da imagem */
+    height: 100px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-width: 3px; /*alterando GROSSURA DA BORDA*/
+    
+}
+
+/* 
+    .img-fluid:
+    A classe `img-fluid` é uma classe do Bootstrap que faz a imagem ser responsiva. 
+    Ela ajusta a largura da imagem para 100% do seu contêiner e mantém a altura proporcional.
+    
+    - `width: 100%`: Faz a imagem ocupar toda a largura do contêiner.
+    - `height: auto`: Ajusta a altura da imagem automaticamente para manter a proporção 
+      original da imagem.
+*/
+.img-fluid {
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+}
+
+.blue-line { /*LINHA que separa img do header do menu do header*/
+  height: 8px;
+  background-color: rgb(0, 206, 200) /*Azul Esverdeado*/
+}
+
+.card-title{
+    display:flex;
+    align-items:center;
+}
+
+/* Contêiner com posição relativa para servir de base para o texto absoluto */
+.footer-img-container {
+  position: relative;
+}
+
+/* Estilização do texto que vai sobre a imagem */
+.footer-text {
+  position: absolute;              /* Posiciona sobre a imagem */
+  top: 50%;                        /* Move para o meio vertical */
+  left: 50%;                       /* Move para o meio horizontal */
+  transform: translate(-50%, -50%); /* Ajusta a âncora para o centro exato */
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}

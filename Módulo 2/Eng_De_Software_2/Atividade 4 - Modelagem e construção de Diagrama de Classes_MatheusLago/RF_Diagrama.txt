@@ -1,0 +1,20 @@
+RF1
+Cadastro e consulta de hóspedes.
+
+RF2
+Reserva de quartos por data.
+
+RF3
+Cancelamento de reservas.
+
+RF4
+Realização de check-in (no momento da chegada).
+
+RF5
+Realização de check-out (na saída).
+
+RF6
+Consulta da disponibilidade de quartos.
+
+RF7
+Geração de relatórios de ocupação.

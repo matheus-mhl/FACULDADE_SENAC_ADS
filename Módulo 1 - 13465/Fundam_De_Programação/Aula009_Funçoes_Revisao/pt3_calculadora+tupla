@@ -1,0 +1,34 @@
+def soma(valores):
+    return valores[0] + valores[1]
+
+def subtracao(valores):
+    return valores[0] - valores[1]
+
+def telaInicial():
+    while True:
+        print('-----CALCULADORA BÁSICA-----')
+        print('Entre com a operação desejada:')
+        opcao = input('Adição/Subtração/Fim (A/S/X): ')
+        if opcao.upper() in ('A', 'S', 'X'):
+            return opcao.upper()
+        else:
+            print('Opção Inválida!!')
+
+def leNumeros():
+    num1 = int(input("Entre com o primeiro número: "))
+    num2 = int(input("Entre com o segundo número: "))
+    return (num1, num2)  # Retorna uma tupla
+
+# Programa principal (main)
+while True:
+    oper = telaInicial()
+    if oper == 'X':
+        break
+    numeros = leNumeros()  # Aqui recebemos uma tupla
+    if oper == 'A':
+        print(f'{numeros[0]} + {numeros[1]} = {soma(numeros)}')
+    elif oper == 'S':
+        print(f'{numeros[0]} - {numeros[1]} = {subtracao(numeros)}')
+
+print('Fechando a Calculadora')
+

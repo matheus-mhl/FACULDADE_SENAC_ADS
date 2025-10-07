@@ -1,0 +1,72 @@
+.botao-comprar{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.botao-comprar:hover{
+    background-color: gold;
+}
+
+.produto {
+  display: flex;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin-left: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.imagem {
+  flex: 1;
+  background-color: #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
+.detalhes {
+  flex: 2;
+  padding: 20px;
+}
+
+.detalhes h2 {
+  margin-top: 0;
+}
+
+.detalhes p {
+  color: #444;
+  margin: 10px 0;
+}
+
+.card-body{
+  text-align: center;
+}
+
+footer{
+    background-color: rgb(253, 253, 112);
+    border: 2px solid black;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

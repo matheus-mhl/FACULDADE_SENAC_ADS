@@ -1,0 +1,57 @@
+--PARTE B
+
+/*1.	Tabela Autor
+o	id_autor: inteiro, chave primária, não nulo.
+o	nome_autor: texto até 50 caracteres, obrigatório.
+o	nacionalidade: texto até 50 caracteres, opcional.
+*/
+
+CREATE TABLE Autor(
+id_autor INT PRIMARY KEY NOT NULL,
+nome_autor VARCHAR(50) NOT NULL, --utilizei NOT NULL para deixar obrigatorio, nao consegui me lembrar de outro comando
+nacionalidade VARCHAR NULL
+);
+
+/*2.	Tabela Livro
+o	id_livro: inteiro, chave primária, não nulo.
+o	titulo: texto até 50 caracteres, obrigatório e único.
+o	ano_publicacao: inteiro, deve ser maior que 1900.
+o	id_autor: inteiro, chave estrangeira referenciando Autor(id_autor).
+o	id_editora: inteiro, chave estrangeira referenciando Editora(id_editora).
+o	quantidade_estoque: inteiro, valor mínimo 0.
+o	Resumo: texto até 100 caracteres, opcional
+*/
+
+CREATE TABLE Livro(
+id_livro INT PRIMARY KEY NOT NULL,
+titulo VARCHAR(50) NOT NULL UNIQUE,
+ano_publicacao INT CHECK (ano_publicacao > 1900),
+id_autor INT FOREIGN KEY REFERENCES Autor(id_autor),
+id_editora INT FOREIGN KEY REFERENCES Editora(id_editora),
+quantidade_estoque INT CHECK (quantidade_estoque > 0),
+Resumo VARCHAR(100)
+);
+
+/*3.	Editora
+o	id_editora: inteiro, chave primária, não nulo.
+o	nome_editora: texto, obrigatório e único.
+o	cidade: texto até 50 caracteres, opcional.
+*/
+
+CREATE TABLE Editora(
+id_editora INT PRIMARY KEY NOT NULL,
+nome_editora VARCHAR NOT NULL UNIQUE,
+cidade VARCHAR(50)
+);
+
+--PARTE C
+/*Após a criação, realize as seguintes alterações:
+•	Adicione à tabela Livro a coluna “categoria” (texto até 20 caracteres, opcional).
+•	Adicione uma restrição para garantir que “ano_publicacao” seja menor ou igual ao ano atual.
+•	Remova a coluna “resumo” da tabela Livro.
+*/
+
+ALTER TABLE Livro 
+ADD Categoria VARCHAR(20) NULL
+CONSTRAINT ADD CHECK ano_publicacao 
+DROP-- ....

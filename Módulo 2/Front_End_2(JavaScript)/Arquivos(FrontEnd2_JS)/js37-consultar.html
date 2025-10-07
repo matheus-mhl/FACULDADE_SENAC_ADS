@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Consulta de Material</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/js37.js"></script>
+</head>
+
+<body>
+    <h1>Consulta de Material</h1>
+    <p><label for="txtCodMaterial">Código do material:</label><input type="text" id="txtCodMaterial" disabled></p>
+    <p><label for="txtDescMaterial">Descrição do material:</label><input type="text" id="txtDescMaterial" disabled></p>
+    <p><label for="txtSaldo">Saldo:</label><input type="text" id="txtSaldo" disabled></p>
+    <p><button id="btnRetornar" type="button" onclick="history.back()" autofocus>Retornar</button></p>
+    <script type="text/javascript">
+        const material1 = new Material();
+        material1.obterDados();
+        document.getElementById('txtCodMaterial').value = material1.codMaterial;
+        document.getElementById('txtDescMaterial').value = material1.descMaterial;
+        document.getElementById('txtSaldo').value = material1.qtdeEstoque;
+    </script>
+</body>
+
+</html>

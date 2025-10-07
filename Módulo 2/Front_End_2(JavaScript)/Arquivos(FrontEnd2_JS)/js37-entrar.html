@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Depósito em conta</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/js37.js"></script>
+</head>
+
+<body>
+    <h1>Entrada de material</h1>
+    <p><label for="txtQtde">Quantidade a entrar:</label><input id="txtQtde" type="text" autofocus></p>
+    <p id="txtMensagem"></p>
+    <p><button id="btnRetornar" type="button" onclick="history.back()">Retornar</button>
+       <button id="btnGravar" type="button" onclick="entrar()">Gravar</button></p>
+    <script type="text/javascript">
+        function entrar() {
+            let mensagem;
+            if (document.getElementById('txtQtde').value=="") {
+                mensagem = "Preencha a quantidade a entrar";
+                document.getElementById('txtQtde').focus();
+            } else if (isNaN(document.getElementById('txtQtde').value)) {
+                mensagem = "Preencha uma quantidade numérica";
+                document.getElementById('txtQtde').focus();
+            } else {
+                const material1 = new Material();
+                material1.entrarMaterial(Number(document.getElementById('txtQtde').value))
+                mensagem = "Entrada realizada com sucesso!";
+            }
+            document.getElementById("txtMensagem").innerHTML = `<b>${mensagem}</b>`;
+        }
+    </script>
+</body>
+
+</html>

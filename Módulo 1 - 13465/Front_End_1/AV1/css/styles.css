@@ -1,0 +1,134 @@
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+#principal {
+    width: 1440px;
+    height: 1108px;
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    border-bottom: 12px solid white;
+}
+
+nav {
+    /* border: 2px solid red; definindo tamanho grossura e cor da borda */
+    width: 700px; /*Largura da borda*/
+    padding: 8px 16px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none; /*remover as bolinhas (que separam os tópicos da lista) */
+    justify-content: space-between; /*organizar contúdo da "ul(unordered list)". "space-around: deixa o contéudo espaçado"*/
+}
+
+ul li a { /*caminho necessário para alterar os elementos dentro da "ul"(ul>li>a)*/
+    color:black;
+    text-decoration: none; /*removendo decoração (nesse caso o sublinhado) do link "ul li a"*/
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px 16px; /*estabelecendo distancia verticalmente e horizontalmente entre os elementos*/
+}
+
+ul li a:hover{ /*Função usada para mudar características da página quando o cursor do mouse passa por cima (nesse caso estamos modificando os tópicos de navegação do "nav")*/
+    background-color: red; /*muda a cor do plano de fundo quando o cursor passar por cima*/
+    color: white; /*muda a cor da plavra para branco*/
+    text-decoration: underline; /*sublinha o texto*/
+}
+
+.instagram {
+    display: flex;
+    align-items: flex-start; /* Alinha no topo */
+    gap: 20px; /* Espaçamento entre imagem e texto */
+    flex-wrap: wrap; /* Permite que os elementos quebrem em telas menores */
+    padding-left: 200px;
+}
+
+.instagram img {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items:end;
+}
+
+/*.instagram p {
+    flex: 1; /* Ocupa o restante do espaço
+}
+*/
+
+#main{
+    display: flex;
+    align-items: flex-start;
+    padding: 20px; /*espaçamento para desgrudar dos cantos*/
+}
+
+.lado_a_lado {
+    display: flex;
+    align-items: flex-start; /* Alinha no topo */
+    gap: 20px; /* Espaçamento entre imagem e texto */
+    flex-wrap: wrap; /* Permite que os elementos quebrem em telas menores */
+    padding: 20px;
+}
+
+.lado_a_lado img {
+    width: 200px;
+    height: auto;
+}
+
+.img_tour_da_taça{
+    margin-bottom: 0px;
+}
+
+.lado_a_lado p {
+    flex: 1; /* Ocupa o restante do espaço */
+    
+}
+
+.p_tour_da_taça{
+    display: flex;
+    padding-left: 250px;
+}
+
+h2{
+    font-weight: bold;
+}
+
+aside {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+aside a{
+    color: white;
+    text-decoration: none; /*Vai tirar o estilo "Link" do cabeçalho*/
+    font-size: 20px;
+    background-color: black;
+    margin-top: 10px; /*Margem serve para espaçar além do limite. ela desgrudou o botão da beirada*/
+}
+
+#lado_a_lado .img_estadio{ /*não consigo modificar tamanho da imagem*/
+    height: 1000px;
+}
+
+#rodape{
+    color: white;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}

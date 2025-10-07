@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap_SiteJuntos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" /> <!--Link para meu CSS-->
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
+<!--Primeiro Exemplo: de uma estrutura de codigo de BootStrap básica, usaando apenas uma coluna:-->
+<!--PRIMEIRO: Criar "container"-->
+<div class="container"> <!--Use "container-fluid" para quando quiser que ele acompanhe a largura do layout do site-->
+    <!--SEGUNDO: Criar "row"-->
+    <div class="row">
+        <!--TERCEIRO: Criar uma "col" (coluna)-->
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+        </div>
+    </div>
+</div>
+
+<!--Segundo Exemplo: de como o GRID funciona quando há 2 ou mais colunas-->
+<!--PRIMEIRO: Criar "container"-->
+<div class="container"> <!--Use "container-fluid" para quando quiser que ele acompanhe a largura do layout do site-->
+    <!--SEGUNDO: Criar "row"-->
+    <div class="row">
+        <!--TERCEIRO: Criar uma "col" (coluna)-->
+        <div class="col-8"> <!--altere de 8 para 6 ou 4; ou o que preferir para mudar a posição do texto(coluna)-->
+            <p class="vermelho" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+        </div>
+        <div class="col-4"> <!--altere de 4 para 6 ou 8 para mudar a posição do texto(coluna), contanto que AMBAS ESTEJAM NA MESMA "row"; e por conssequencia container-->
+            <p class="azul" style="color:blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+        </div>
+    </div>
+</div>
+
+<!--Terceiro Exemplo: para quando quiser botar uma coluna dentro de outra coluna(SEMPRE utilize "row")-->
+<div class="container">
+    <div class="row">
+        <div class="col-6"> <!--div(1a coluna)-->
+            <div class="row"> <!--PRECISA CRIAR O "row"-->
+                <!--APÓS criar o "row", voce pode criar outra "col"-->
+                <div class="col-6"> <!--div(2a coluna)--> 
+                    <p class="vermelho" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+                </div>
+                <!--Nesse caso perceba que o que fizemos foi estabelecer que: a "div(1a coluna)"iria ocupar metade do "row"; e a "div(2a coluna)" e "div(3a coluna) ocupam metade da metade" -->
+                <div class="col-6"> <!--div(3a coluna)--> 
+                    <p class="vermelho" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4"> <!--altere de 4 para 6 ou 8 para mudar a posição do texto(coluna), contanto que AMBAS ESTEJAM NA MESMA "row"; e por conssequencia container-->
+            <p class="azul" style="color:blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+        </div>
+    </div>
+</div>
+
+<!--Quarto Exemplo: responsividade de colunas (col-12; col-sm-6; col-md-3 )-->
+<!--Nesse caso as colunas irão responder conforme o tamanho das telas-->
+<div class="container">
+    <div class="row">
+        <div class="col-6"> 
+            <div class="row"> 
+                <div class="col-12 col-sm-6 col-md-3"> <!--Ao utilizar essas definições o conteudo dentro da col irá responder conforme o ajuste da tela-->
+                    <p class="vermelho" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+                </div> 
+                <div class="col-12 col-sm-6 col-md-3"> 
+                    <p class="vermelho" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-4"> 
+            <p class="azul" style="color:blue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aliquam enim ab at, repellendus dignissimos iusto a consectetur consequatur laudantium impedit tempora earum modi aliquid in ducimus accusamus, animi deleniti?</p>
+        </div>
+    </div>
+</div>
+
+
+

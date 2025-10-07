@@ -1,0 +1,18 @@
+package variaveis;
+
+public class TesteOpperadoresMatematicos1 {
+
+	public static void main(String[] args) {
+		int a = 0;
+		a = a + 1;
+		
+		int e = 5;
+		e = e + 2;
+		
+		System.out.println("Variavel a=" + a);
+		System.out.println("Variavel e=" + e);
+		
+
+	}
+
+}

@@ -1,0 +1,46 @@
+/*Nessa aula estaremos testando a responsividade de uma págona web em diferentes dispositivos com diferentes telas*/
+/*A unidade de medida utilizada incialmente será o px(pixels)*/
+/*Mobile*/
+body{
+    background-color: red;
+}
+
+h1{
+    color: white;
+}
+
+/*Tablet*/
+@media(min-width: 768px){/*MEDIA QUERY utilizado para determinar como o site irá aparentar, dependendo do tamanho da tela*/
+    body{
+        background-color: green;
+        font-family:'Courier New', Courier, monospace
+    }
+    h1{
+        color: orange;
+    }
+}
+
+/*Desktop*/
+@media(min-width: 960px){ /*IMPORTANTE: lembre-se de construir o código da Media Query na ordem crescente quando se utiliza"min-width" e na ordem decrescente quando se utiliza "max-width"*/
+    body{
+        background-color: pink;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    h1{
+        color: purple;
+    }
+}
+
+/*Widescreen*/
+@media(min-width: 1200px){
+    body{
+        background-color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h1{
+        color: gray;
+    }
+    h2{
+        color: gray;
+    }
+}

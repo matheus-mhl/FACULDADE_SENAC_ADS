@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Cadastramento de conta</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/js37.js"></script>
+</head>
+
+<body>
+    <h1>Cadastramento de Material</h1>
+    <p><label for="txtCodMaterial">Código do material:</label><input id="txtCodMaterial" type="text" placeholder="Digite o código do material" autofocus></p>
+    <p><label for="txtDescMaterial">Descrição do material:</label><input id="txtDescMaterial" type="text" placeholder="Digite a descrição do material"></p>
+    <p id="txtMensagem"></p>
+    <p><button id="btnRetornar" type="button" onclick="history.back()">Retornar</button>
+        <button id="btnGravar" type="button" onclick="cadastrar()">Gravar</button>
+    </p>
+    <script type="text/javascript">
+        function cadastrar() {
+            let mensagem;
+            if (document.getElementById('txtCodMaterial').value == "") {
+                mensagem = "Preencha o código do material";
+                document.getElementById('txtCodMaterial').focus();
+            } else if (isNaN(document.getElementById('txtCodMaterial').value)) {
+                mensagem = "Preencha um valor numérico para o código do material";
+                document.getElementById('txtCodMaterial').focus();
+            } else if (document.getElementById('txtDescMaterial').value == "") {
+                mensagem = "Preencha a descrição do material";
+                document.getElementById('txtDescMaterial').focus();
+            } else {
+                const material1 = new Material();
+                material1.cadastrar(Number(document.getElementById('txtCodMaterial').value),
+                                document.getElementById('txtDescMaterial').value);
+                mensagem = "Gravação realizada com sucesso!";
+            }
+            document.getElementById("txtMensagem").innerHTML = `<b>${mensagem}</b>`;
+        }
+    </script>
+</body>
+
+</html>

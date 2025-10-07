@@ -1,0 +1,159 @@
+body {
+    background-color: 	#A8E6CF;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+#principal {
+    width: 1280px;
+    border: 2px solid black;
+}
+
+/*PARTE COLADA ABAIXO*/
+
+header{
+    height: 143px;
+    /*botando plano de fundo do cabeçaçho utilizando uma imagem. */
+    background-image: url("../img/bck-fundo.jpg"); /*IMPORTANTE: utilize".." para fazer o VScode entender que você quer sair da pasta do "index.html" para pegar a imagem desejada na pasta "img"*/
+    
+    /*ANOTAÇÕES ABAIXO de comandos para manusear repetição, tamanho e posição da imagem*/
+    
+    /*background-repeat: no-repeat; /*este código serve para PREVENIR que a imagem se repita para preencher as dimensões definidas*/
+    /*background-size: cover; /*ordenando que a imagem do background cubra o espaço defindo do "header" */
+    /*background-position: right; /*definir posição da imagem*/
+
+    display: flex; /*é utilizado para transformar um elemento em um "flex container", permitindo que você controle o layout dos seus elementos filhos de forma mais flexível e responsiva*/
+        justify-content: start; /*alinhamento no eixo principal(HORIZONTAL: eixo X)*/
+        align-items: center; /*alinhamento no eixo transversal(VERTICAL/COLUNA: eixo Y)*/
+    
+}
+
+header img { /*utilizando herança para especificar imagem. Essa téncina não funcionaria no caso de multiplas imagens. No caso de multiplas imagens utiizar: "id" ou "class", no "index.html" para especificar imagem*/
+    margin: 0px 12px;
+    width: 150px; /*Ajustando largura da imagem*/
+    height: 120px; /*Ajustando altura da imagem*/
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav {
+    /* border: 2px solid red; definindo tamanho grossura e cor da borda */
+    width: 700px; /*Largura da borda*/
+    margin-left: 54px; /*criando margem para a esquerda*/
+}
+
+ul {
+    display: flex;
+    list-style-type: none; /*remover as bolinhas (que separam os tópicos da lista) */
+    justify-content: space-between; /*organizar contúdo da "ul(unordered list)". "space-around: deixa o contéudo espaçado"*/
+}
+
+ul li a { /*caminho necessário para alterar os elementos dentro da "ul"(ul>li>a)*/
+    color:black;
+    text-decoration: none; /*removendo decoração (nesse caso o sublinhado) do link "ul li a"*/
+    font-size: 16px;
+    font-weight: bold;
+    background-color: aquamarine;
+    padding: 8px 16px; /*estabelecendo distancia verticalmente e horizontalmente entre os elementos*/
+    border-radius: 18px; /*arredondando as bordas*/
+    
+    
+}
+
+ul li a:hover{ /*Função usada para mudar características da página quando o cursor do mouse passa por cima (nesse caso estamos modificando os tópicos de navegação do "nav")*/
+    background-color: blueviolet; /*muda a cor do plano de fundo quando o cursor passar por cima*/
+    color: white; /*muda a cor da plavra para branco*/
+    text-decoration: underline; /*sublinha o texto*/
+}
+/*aqui começa o meio do site(MAIN SECTION)*/
+
+section{
+    /* "width:" não é necessário botar tamanho ou nem mesmo o próprio "width", pois ele já está herdando suas dimensçoes da section anterior, mas seria 1280px*/
+    background-color: 	#FFD580;
+    display: flex;
+    /*margin: 15px 0px;*/
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+    padding: 20px; /*espaçamento para desgrudar dos cantos*/
+}
+
+#primeiro_destaque{
+    width: 900px;
+    /*border: 2px solid black;(CAIXA PRETA para melhorar visualização durante desenvolvimento do site)*/
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#textos{
+    margin-left: 18px;
+}
+
+h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#destaque_azul_claro{
+    width: 880px; /*o valor é 880 por causa do "padding" (na linha 93), caso o contrário a página não ficaria simétrica*/
+    background-color: #FF6F61;
+    display: flex;
+    padding: 20px; /*sempre ajustar o "width" e o "height", dependendo do valor do "padding"*/
+    border: 0px;
+}
+
+/*IMPORTANTE: como alterar dimensão/posicionamento de qualquer img --> É necessário dar uma classe(class="img04) a ela com html(ex: Linha51 <img src="img/img-04.png" alt="" title="" class="img04"/>)*/
+#destaque_azul_claro .img04{ /*Normalmente não seria necessário utilizar "class", já que a "img04" está dentro do seletor "#destaque_azul_claro. Mas por algum motivo a img só está aceitando ser modificada caso eu estabeleça uma classe(class=img04) para ela."*/
+    margin-left: 40px;
+
+}
+
+aside {
+    background-color: #FF6F61;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+h4 {
+    color: white;
+    text-transform: uppercase; /*Coloca o texto em caixa alta*/
+}
+
+aside p {
+    color: white;
+    text-align: center; /*para alinhar o texto pelo centro/justificado/à direita/à esquerda...*/
+    margin: 0px 18px;
+    line-height: 22px;
+}
+
+aside a {
+    color: black;
+    text-decoration: none; /*Vai tirar o estilo "Link" do cabeçalho*/
+    font-size: 18px;
+    background-color: #FFD580;
+    padding: 2px 16px; /*Cria uma caixa de mensagem para espaçar eles do texto*/
+    border-radius: 15px; /*Arredonda as bordas*/
+    margin-bottom: 20px; /*Margem serve para espaçar além do limite. ela desgrudou o botão da beirada*/
+    font-weight: bold;
+}
+
+aside a:hover {
+    background-color: purple;
+    color: white;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rebeccapurple;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}

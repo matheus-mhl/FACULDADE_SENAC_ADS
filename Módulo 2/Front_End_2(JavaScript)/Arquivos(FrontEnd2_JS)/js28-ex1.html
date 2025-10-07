@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Classe</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="js/js28-ex1-opcao1.js"></script>
+    <!-- <script type="text/javascript" src="js/js28-ex1-opcao2.js"></script> -->
+</head>
+
+<body>
+    <script type="text/javascript">
+        const conta1 = new Conta();
+        let op, valor;
+        do {
+            op = Number(prompt("1-Cadastrar conta\n2-Depositar\n3-Sacar\n4-Consultar saldo\n5-Encerrar\nInforme a opção desejada: "));
+            switch (op) {
+                case 1:
+                    conta1.agencia = Number(prompt("Entre com a agencia:"));
+                    conta1.numeroConta = Number(prompt("Entre com o número da conta:"));
+                    break;
+                case 2:
+                    valor = Number(prompt("Entre com o valor a depositar:"));
+                    conta1.depositar(valor);
+                    break;
+                case 3:
+                    valor = Number(prompt("Entre com o valor a sacar:"));
+                    if (conta1.sacar(valor))
+                        alert("Saque realizado com sucesso!");
+                    else
+                        alert("Saldo indisponível!");
+                    break;
+                case 4:
+                    alert(`O saldo da conta ${conta1.numeroConta} da agência ${conta1.agencia} é ${conta1.saldo}`);
+                    break;
+                case 5:
+                    break;
+                default:
+                    alert("Você não escolheu nenhuma das opções listadas!");
+                    break;
+            }
+        } while (op != 5);
+        alert("Programa encerrado!");
+    </script>
+</body>
+
+</html>

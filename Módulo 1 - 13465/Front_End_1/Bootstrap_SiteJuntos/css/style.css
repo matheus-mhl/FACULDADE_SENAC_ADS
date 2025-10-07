@@ -1,0 +1,37 @@
+.navbar-brand img{
+    width: 70%;
+}
+
+.bg-minha-cor{
+    background-color: rgb(234, 234, 234);
+}
+
+.nav-link{
+    font-weight: 700;
+}
+
+/*Não é necessário utilizar o seguinte código (bg-black). Pois o Bootstrap possui classes prontas.
+Por tanto ao utilizar "bg-black" no HTML ele já ficará com o backgroung preto. Mas de qualquer forma,
+se eu quisesse fazer essa mudança com o CSS, basta utilizar o cógigo CSS abaixo.*/
+.bg-black{
+    background-color: black;
+}
+
+.card{
+    background-color: black;
+    color: white;
+}
+
+.card-title{
+    color: lightgray;
+}
+
+.btn-alter{
+    background-color: white;
+    color: black;
+}
+
+.btn-alter:hover{
+    background-color: lightgray;
+    color: black;
+}
